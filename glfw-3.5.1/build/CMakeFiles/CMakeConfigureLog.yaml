@@ -1,0 +1,1180 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineSystem.cmake:220 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.19045 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:541 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:583 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      .NET Framework용 Microsoft (R) Build Engine 버전 16.11.6+a918ceb31
+      Copyright (C) Microsoft Corporation. All rights reserved.
+      
+      빌드 시작: 2026-10-28 오후 11:19:33
+      1 노드의 "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트(기본 대상)입니다.
+      PrepareForBuild:
+        "Debug\\" 디렉터리를 만들고 있습니다.
+        "Debug\\CompilerIdC.tlog\\" 디렉터리를 만들고 있습니다.
+      InitializeBuildStatus:
+        "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\\CompilerIdC.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc142.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+        "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate"에 연결(touching)하고 있습니다.
+      "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+      
+      빌드했습니다.
+          경고 0개
+          오류 0개
+      
+      경과 시간: 00:00:01.60
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/OpenGL/glfw-3.5.1/build/CMakeFiles/4.5.0-rc1/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:105 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/MinGW/bin/lld-link.com"
+      - "C:/MinGW/bin/lld-link.exe"
+      - "C:/MinGW/bin/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/lld-link"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/lld-link"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/lld-link.com"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/lld-link.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/lld-link"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/lld-link.com"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/lld-link.exe"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/lld-link"
+      - "C:/Users/AS/.dotnet/tools/lld-link.com"
+      - "C:/Users/AS/.dotnet/tools/lld-link.exe"
+      - "C:/Users/AS/.dotnet/tools/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/MinGW/bin/mt.com"
+      - "C:/MinGW/bin/mt.exe"
+      - "C:/MinGW/bin/mt"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/mt"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/mt.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/mt.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/mt"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/mt.com"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/mt.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/mt"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/mt.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/mt.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/mt.com"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/mt.exe"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/mt"
+      - "C:/Users/AS/.dotnet/tools/mt.com"
+      - "C:/Users/AS/.dotnet/tools/mt.exe"
+      - "C:/Users/AS/.dotnet/tools/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:596 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:569 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/GLFW/bin/"
+      - "C:/Program Files/GLFW/sbin/"
+      - "C:/Program Files/GLFW/"
+    searched_directories:
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/MinGW/bin/rc.com"
+      - "C:/MinGW/bin/rc.exe"
+      - "C:/MinGW/bin/rc"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/rc"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/rc.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/rc.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/rc"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/rc.com"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/rc.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/rc"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/rc.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/rc.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/rc.com"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/rc.exe"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/rc"
+      - "C:/Users/AS/.dotnet/tools/rc.com"
+      - "C:/Users/AS/.dotnet/tools/rc.exe"
+      - "C:/Users/AS/.dotnet/tools/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files/GLFW/bin/rc.com"
+      - "C:/Program Files/GLFW/bin/rc.exe"
+      - "C:/Program Files/GLFW/bin/rc"
+      - "C:/Program Files/GLFW/sbin/rc.com"
+      - "C:/Program Files/GLFW/sbin/rc.exe"
+      - "C:/Program Files/GLFW/sbin/rc"
+      - "C:/Program Files/GLFW/rc.com"
+      - "C:/Program Files/GLFW/rc.exe"
+      - "C:/Program Files/GLFW/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/GLFW"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd"
+      binary: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_a238f.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        .NET Framework용 Microsoft (R) Build Engine 버전 16.11.6+a918ceb31
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        빌드 시작: 2026-10-28 오후 11:19:35
+        1 노드의 "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\cmTC_a238f.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_a238f.dir\\Debug\\cmTC_a238f.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_a238f.dir\\Debug\\cmTC_a238f.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a238f.dir\\Debug\\\\" /Fd"cmTC_a238f.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30159(x64)
+          CMakeCCompilerABI.c
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_a238f.dir\\Debug\\\\" /Fd"cmTC_a238f.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\Debug\\cmTC_a238f.exe" /INCREMENTAL /ILK:"cmTC_a238f.dir\\Debug\\cmTC_a238f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd/Debug/cmTC_a238f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd/Debug/cmTC_a238f.lib" /MACHINE:X64  /machine:x64 cmTC_a238f.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_a238f.vcxproj -> C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\Debug\\cmTC_a238f.exe
+        FinalizeBuildStatus:
+          "cmTC_a238f.dir\\Debug\\cmTC_a238f.tlog\\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+          "cmTC_a238f.dir\\Debug\\cmTC_a238f.tlog\\cmTC_a238f.lastbuildstate"에 연결(touching)하고 있습니다.
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\cmTC_a238f.vcxproj" 프로젝트를 빌드했습니다(기본 대상).
+        
+        빌드했습니다.
+            경고 0개
+            오류 0개
+        
+        경과 시간: 00:00:00.95
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)(\\.exe)?"?( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-pt1uyd\\Debug\\cmTC_a238f.exe" /INCREMENTAL /ILK:"cmTC_a238f.dir\\Debug\\cmTC_a238f.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd/Debug/cmTC_a238f.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-pt1uyd/Debug/cmTC_a238f.lib" /MACHINE:X64  /machine:x64 cmTC_a238f.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.29.30159.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CheckSourceCompiles.cmake:84 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CheckCSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:160 (check_c_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:226 (_threads_check_libc)"
+      - "CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-kzab1n"
+      binary: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-kzab1n"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/OpenGL/glfw-3.5.1/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-kzab1n'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_8f8d0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        .NET Framework용 Microsoft (R) Build Engine 버전 16.11.6+a918ceb31
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        빌드 시작: 2026-10-28 오후 11:19:37
+        1 노드의 "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\cmTC_8f8d0.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_8f8d0.dir\\Debug\\cmTC_8f8d0.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_8f8d0.dir\\Debug\\cmTC_8f8d0.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_8f8d0.dir\\Debug\\\\" /Fd"cmTC_8f8d0.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\src.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30159(x64)
+          src.c
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CMAKE_HAVE_LIBC_PTHREAD /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_8f8d0.dir\\Debug\\\\" /Fd"cmTC_8f8d0.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\src.c"
+        C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\src.c(1,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pthread.h': No such file or directory [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\cmTC_8f8d0.vcxproj]
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\cmTC_8f8d0.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\cmTC_8f8d0.vcxproj"(기본 대상)(1)->
+        (ClCompile 대상) -> 
+          C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\src.c(1,10): fatal error C1083: 포함 파일을 열 수 없습니다. 'pthread.h': No such file or directory [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-kzab1n\\cmTC_8f8d0.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.66
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:238 (_threads_check_lib)"
+      - "CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthreads"
+    directories:
+      source: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-gz9l9e"
+      binary: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-gz9l9e"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/OpenGL/glfw-3.5.1/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREADS_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-gz9l9e'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_7a792.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        .NET Framework용 Microsoft (R) Build Engine 버전 16.11.6+a918ceb31
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        빌드 시작: 2026-10-28 오후 11:19:38
+        1 노드의 "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\cmTC_7a792.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_7a792.dir\\Debug\\cmTC_7a792.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_7a792.dir\\Debug\\cmTC_7a792.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7a792.dir\\Debug\\\\" /Fd"cmTC_7a792.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30159(x64)
+          CheckFunctionExists.c
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7a792.dir\\Debug\\\\" /Fd"cmTC_7a792.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\Debug\\cmTC_7a792.exe" /INCREMENTAL /ILK:"cmTC_7a792.dir\\Debug\\cmTC_7a792.ilk" /NOLOGO pthreads.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-gz9l9e/Debug/cmTC_7a792.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-gz9l9e/Debug/cmTC_7a792.lib" /MACHINE:X64  /machine:x64 cmTC_7a792.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthreads.lib' 파일을 열 수 없습니다. [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\cmTC_7a792.vcxproj]
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\cmTC_7a792.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\cmTC_7a792.vcxproj"(기본 대상)(1)->
+        (Link 대상) -> 
+          LINK : fatal error LNK1104: 'pthreads.lib' 파일을 열 수 없습니다. [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-gz9l9e\\cmTC_7a792.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.77
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CheckLibraryExists.cmake:142 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:175 (check_library_exists)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindThreads.cmake:239 (_threads_check_lib)"
+      - "CMakeLists.txt:48 (find_package)"
+    checks:
+      - "Looking for pthread_create in pthread"
+    directories:
+      source: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-q28v4z"
+      binary: "C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-q28v4z"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS"
+      CMAKE_C_FLAGS_DEBUG: "/Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/OpenGL/glfw-3.5.1/CMake/modules"
+    buildResult:
+      variable: "CMAKE_HAVE_PTHREAD_CREATE"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-q28v4z'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe" cmTC_b7d12.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:n
+        .NET Framework용 Microsoft (R) Build Engine 버전 16.11.6+a918ceb31
+        Copyright (C) Microsoft Corporation. All rights reserved.
+        
+        빌드 시작: 2026-10-28 오후 11:19:39
+        1 노드의 "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\cmTC_b7d12.vcxproj" 프로젝트(기본 대상)입니다.
+        PrepareForBuild:
+          "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\Debug\\" 디렉터리를 만들고 있습니다.
+          "cmTC_b7d12.dir\\Debug\\cmTC_b7d12.tlog\\" 디렉터리를 만들고 있습니다.
+        InitializeBuildStatus:
+          "AlwaysCreate"이(가) 지정되었기 때문에 "cmTC_b7d12.dir\\Debug\\cmTC_b7d12.tlog\\unsuccessfulbuild"을(를) 만들고 있습니다.
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b7d12.dir\\Debug\\\\" /Fd"cmTC_b7d12.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\CheckFunctionExists.c"
+          Microsoft (R) C/C++ 최적화 컴파일러 버전 19.29.30159(x64)
+          Copyright (c) Microsoft Corporation. All rights reserved.
+          CheckFunctionExists.c
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D CHECK_FUNCTION_EXISTS=pthread_create /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_b7d12.dir\\Debug\\\\" /Fd"cmTC_b7d12.dir\\Debug\\vc142.pdb" /external:W1 /TC /errorReport:queue "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\CheckFunctionExists.c"
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\Debug\\cmTC_b7d12.exe" /INCREMENTAL /ILK:"cmTC_b7d12.dir\\Debug\\cmTC_b7d12.ilk" /NOLOGO pthread.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-q28v4z/Debug/cmTC_b7d12.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/OpenGL/glfw-3.5.1/build/CMakeFiles/CMakeScratch/TryCompile-q28v4z/Debug/cmTC_b7d12.lib" /MACHINE:X64  /machine:x64 cmTC_b7d12.dir\\Debug\\CheckFunctionExists.obj
+        LINK : fatal error LNK1104: 'pthread.lib' 파일을 열 수 없습니다. [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\cmTC_b7d12.vcxproj]
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\cmTC_b7d12.vcxproj" 프로젝트를 빌드했습니다(기본 대상). - 실패
+        
+        빌드하지 못했습니다.
+        
+        "C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\cmTC_b7d12.vcxproj"(기본 대상)(1)->
+        (Link 대상) -> 
+          LINK : fatal error LNK1104: 'pthread.lib' 파일을 열 수 없습니다. [C:\\OpenGL\\glfw-3.5.1\\build\\CMakeFiles\\CMakeScratch\\TryCompile-q28v4z\\cmTC_b7d12.vcxproj]
+        
+            경고 0개
+            오류 1개
+        
+        경과 시간: 00:00:00.82
+        
+      exitCode: 1
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindDoxygen.cmake:779 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindDoxygen.cmake:964 (_Doxygen_find_doxygen)"
+      - "docs/CMakeLists.txt:39 (find_package)"
+    mode: "program"
+    variable: "DOXYGEN_EXECUTABLE"
+    description: "Doxygen documentation generation tool (https://www.doxygen.nl)"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "doxygen"
+    candidate_directories:
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/MinGW/bin/"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/"
+      - "C:/Users/AS/.dotnet/tools/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files/GLFW/bin/"
+      - "C:/Program Files/GLFW/sbin/"
+      - "C:/Program Files/GLFW/"
+      - "/REGISTRY-NOTFOUND/bin/"
+      - "/Applications/Doxygen.app/Contents/Resources/"
+      - "/Applications/Doxygen.app/Contents/MacOS/"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/"
+    searched_directories:
+      - "C:/Windows/System32/doxygen.com"
+      - "C:/Windows/System32/doxygen.exe"
+      - "C:/Windows/System32/doxygen"
+      - "C:/Windows/doxygen.com"
+      - "C:/Windows/doxygen.exe"
+      - "C:/Windows/doxygen"
+      - "C:/Windows/System32/wbem/doxygen.com"
+      - "C:/Windows/System32/wbem/doxygen.exe"
+      - "C:/Windows/System32/wbem/doxygen"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/doxygen"
+      - "C:/Windows/System32/OpenSSH/doxygen.com"
+      - "C:/Windows/System32/OpenSSH/doxygen.exe"
+      - "C:/Windows/System32/OpenSSH/doxygen"
+      - "C:/MinGW/bin/doxygen.com"
+      - "C:/MinGW/bin/doxygen.exe"
+      - "C:/MinGW/bin/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/Tools/Binn/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/doxygen"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/doxygen.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/doxygen.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/doxygen"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/doxygen.com"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/doxygen.exe"
+      - "C:/Program Files/Microsoft SQL Server/150/DTS/Binn/doxygen"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/doxygen.com"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/doxygen.exe"
+      - "C:/Program Files (x86)/Microsoft SQL Server/160/DTS/Binn/doxygen"
+      - "C:/Program Files/Git/cmd/doxygen.com"
+      - "C:/Program Files/Git/cmd/doxygen.exe"
+      - "C:/Program Files/Git/cmd/doxygen"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/doxygen"
+      - "C:/Program Files/dotnet/doxygen.com"
+      - "C:/Program Files/dotnet/doxygen.exe"
+      - "C:/Program Files/dotnet/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/doxygen.com"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/doxygen.exe"
+      - "C:/Users/AS/AppData/Local/Microsoft/WindowsApps/doxygen"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/doxygen.com"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/doxygen.exe"
+      - "C:/Users/AS/AppData/Local/Programs/Microsoft VS Code/bin/doxygen"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/doxygen.com"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/doxygen.exe"
+      - "C:/Users/AS/AppData/Local/GitHubDesktop/bin/doxygen"
+      - "C:/Users/AS/.dotnet/tools/doxygen.com"
+      - "C:/Users/AS/.dotnet/tools/doxygen.exe"
+      - "C:/Users/AS/.dotnet/tools/doxygen"
+      - "C:/Program Files/bin/doxygen.com"
+      - "C:/Program Files/bin/doxygen.exe"
+      - "C:/Program Files/bin/doxygen"
+      - "C:/Program Files/sbin/doxygen.com"
+      - "C:/Program Files/sbin/doxygen.exe"
+      - "C:/Program Files/sbin/doxygen"
+      - "C:/Program Files/doxygen.com"
+      - "C:/Program Files/doxygen.exe"
+      - "C:/Program Files/doxygen"
+      - "C:/Program Files (x86)/bin/doxygen.com"
+      - "C:/Program Files (x86)/bin/doxygen.exe"
+      - "C:/Program Files (x86)/bin/doxygen"
+      - "C:/Program Files (x86)/sbin/doxygen.com"
+      - "C:/Program Files (x86)/sbin/doxygen.exe"
+      - "C:/Program Files (x86)/sbin/doxygen"
+      - "C:/Program Files (x86)/doxygen.com"
+      - "C:/Program Files (x86)/doxygen.exe"
+      - "C:/Program Files (x86)/doxygen"
+      - "C:/Program Files/CMake/bin/doxygen.com"
+      - "C:/Program Files/CMake/bin/doxygen.exe"
+      - "C:/Program Files/CMake/bin/doxygen"
+      - "C:/Program Files/CMake/sbin/doxygen.com"
+      - "C:/Program Files/CMake/sbin/doxygen.exe"
+      - "C:/Program Files/CMake/sbin/doxygen"
+      - "C:/Program Files/CMake/doxygen.com"
+      - "C:/Program Files/CMake/doxygen.exe"
+      - "C:/Program Files/CMake/doxygen"
+      - "C:/Program Files/GLFW/bin/doxygen.com"
+      - "C:/Program Files/GLFW/bin/doxygen.exe"
+      - "C:/Program Files/GLFW/bin/doxygen"
+      - "C:/Program Files/GLFW/sbin/doxygen.com"
+      - "C:/Program Files/GLFW/sbin/doxygen.exe"
+      - "C:/Program Files/GLFW/sbin/doxygen"
+      - "C:/Program Files/GLFW/doxygen.com"
+      - "C:/Program Files/GLFW/doxygen.exe"
+      - "C:/Program Files/GLFW/doxygen"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.com"
+      - "/REGISTRY-NOTFOUND/bin/doxygen.exe"
+      - "/REGISTRY-NOTFOUND/bin/doxygen"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Doxygen.app/Contents/MacOS/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/Resources/doxygen"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.com"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen.exe"
+      - "/Applications/Utilities/Doxygen.app/Contents/MacOS/doxygen"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\MinGW\\bin"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\170\\Tools\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\150\\Tools\\Binn\\"
+        - "C:\\Program Files\\Microsoft SQL Server\\150\\DTS\\Binn\\"
+        - "C:\\Program Files (x86)\\Microsoft SQL Server\\160\\DTS\\Binn\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\AS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\AS\\AppData\\Local\\GitHubDesktop\\bin"
+        - "C:\\Users\\AS\\.dotnet\\tools"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files/GLFW"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files/GLFW"
+...
