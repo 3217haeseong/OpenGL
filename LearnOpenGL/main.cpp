@@ -16,6 +16,16 @@ void InitSqaure();
 // 사각형을 렌더링하는 함수
 void DrawSquare();
 
+void InitPractice1();
+void DrawPractice1();
+
+void InitPractice2();
+void DrawPractice2();
+
+void InitPractice3();
+void DrawPractice3();
+
+
 // 정점 셰이더의 소스 코드를 가져와서 상수 C문자열에 저장
 const char* vertexShaderSource = "#version 330 core\n"
 	"layout (location = 0) in vec3 aPos;\n"
@@ -34,12 +44,34 @@ const char* fragmentShaderSource = "#version 330 core\n"
 
 // 버퍼 객체 선언
 unsigned int VBO;
+unsigned int VBO2;
 
 // 삼각형 정점
 float triangle_vertices[] = {
 	-0.5f, -0.5f, 0.0f,
 	 0.5f, -0.5f, 0.0f,
 	 0.0f,  0.5f, 0.0f
+};
+
+float practice1_vertices[] = {
+	-1.f, -0.5f, 0.0f,
+	-0.0f,-0.5f, 0.0f,
+	-0.5f,0.5f, 0.0f,
+	1.0f,-0.5f, 0.0f,
+	0.f, -0.5f, 0.0f,
+	0.5f, 0.5f, 0.0f
+};
+
+float practice2_1_vertices[] = {
+	-1.f, -0.5f, 0.0f,
+	-0.0f,-0.5f, 0.0f,
+	-0.5f,0.5f, 0.0f
+};
+
+float practice2_2_vertices[] = {
+	1.0f,-0.5f, 0.0f,
+	0.f, -0.5f, 0.0f,
+	0.5f, 0.5f, 0.0f
 };
 
 // ID로 참조되는 셰이더 객체를 생성
@@ -54,6 +86,7 @@ unsigned int fragmentShader;
 unsigned int shaderProgram;
 
 unsigned int VAO;
+unsigned int VAO2;
 
 float square_vertices[] = {
 	0.5f,  0.5f, 0.0f,  // top right
@@ -120,8 +153,12 @@ int main()
 
 		/*InitTriangle();
 		DrawTriangle();*/
-		InitSqaure();
-		DrawSquare();
+		/*InitSqaure();
+		DrawSquare();*/
+		/*InitPractice1();
+		DrawPractice1();*/
+		InitPractice2();
+		DrawPractice2();
 
 		// 이벤트를 확인하고 호출한 다음 버퍼를 교체
 		glfwSwapBuffers(window);
@@ -277,6 +314,146 @@ void DrawSquare()
 	glBindVertexArray(VAO);
 	glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 	glBindVertexArray(0);
+}
+
+void InitPractice1()
+{
+	glGenBuffers(1, &VBO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO );
+	glBufferData(GL_ARRAY_BUFFER, sizeof(practice1_vertices), practice1_vertices , GL_STATIC_DRAW);
+
+	vertexShader = glCreateShader(GL_VERTEX_SHADER);
+	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+	glCompileShader(vertexShader);
+
+	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+	if (!success)
+	{
+		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+	}
+
+	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+	glCompileShader(fragmentShader);
+
+	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+	if (!success)
+	{
+		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+	}
+
+	shaderProgram = glCreateProgram();
+	glAttachShader(shaderProgram, vertexShader);
+	glAttachShader(shaderProgram, fragmentShader);
+	glLinkProgram(shaderProgram);
+	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+	if (!success)
+	{
+		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::PROGRAM::LINKIN_FAILED\n" << infoLog << std::endl;
+	}
+
+	glDeleteShader(vertexShader);
+	glDeleteShader(fragmentShader);
+
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	// 이건 바인딩되어 있는 객체를 해제하는 코드로 여기서는 안해도 상관 없음.
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+}
+
+
+void DrawPractice1()
+{
+	glUseProgram(shaderProgram);
+	glBindVertexArray(VAO);
+	glDrawArrays(GL_TRIANGLES, 0, 6);
+}
+
+void InitPractice2()
+{
+	glGenBuffers(1,&VBO);
+	glBindBuffer(GL_ARRAY_BUFFER , VBO);
+	glBufferData(GL_ARRAY_BUFFER,  sizeof(practice2_1_vertices), practice2_1_vertices , GL_STATIC_DRAW);
+
+	glGenBuffers(1, &VBO2);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO2);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(practice2_2_vertices), practice2_2_vertices, GL_STATIC_DRAW);
+
+	vertexShader = glCreateShader(GL_VERTEX_SHADER);
+	glShaderSource(vertexShader, 1 ,&vertexShaderSource, NULL);
+	glCompileShader(vertexShader);
+	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+	if (!success)
+	{
+		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+	}
+
+	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+	glCompileShader(fragmentShader);
+	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+	if (!success)
+	{
+		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+	}
+
+	shaderProgram = glCreateProgram();
+	glAttachShader(shaderProgram, vertexShader);
+	glAttachShader(shaderProgram, fragmentShader);
+	glLinkProgram(shaderProgram);
+	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+	if (!success)
+	{
+		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+		std::cout << "ERROR::SHADER::PROGRAM::LINKIN_FAILED\n" << infoLog << std::endl;
+	}
+
+	glDeleteShader(vertexShader);
+	glDeleteShader(fragmentShader);
+
+	
+	glGenVertexArrays(1, &VAO);
+	glBindVertexArray(VAO);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE, 3*sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	
+	glGenVertexArrays(1, &VAO2);
+	glBindVertexArray(VAO2);
+	glBindBuffer(GL_ARRAY_BUFFER, VBO2);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
+	glEnableVertexAttribArray(0);
+
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindVertexArray(0);
+		
+}
+
+void DrawPractice2()
+{
+	glUseProgram(shaderProgram);
+	glBindVertexArray(VAO);
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+	glBindVertexArray(VAO2);
+	glDrawArrays(GL_TRIANGLES, 0, 3);
+}
+
+void InitPractice3()
+{
+}
+
+void DrawPractice3()
+{
 }
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
