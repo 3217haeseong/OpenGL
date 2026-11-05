@@ -1,6 +1,7 @@
 #include "glad/glad.h"
 #include "glfw-3.5.1/include/GLFW/glfw3.h"
 #include <iostream>
+#include <LearnOpenGL/Shader.h>
 
 // 첫 번째 변수는 GLFWwindow 객체, 두 번째 인수는 새 창 크기를 나타내는 두개의 변수
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -11,26 +12,37 @@ void InitTriangle();
 // 삼각형을 렌더링하는 함수
 void DrawTriangle();
 
+//void InitPractice1();
+//void DrawPractice1();
+//
+//void InitPractice2();
+//void DrawPractice2();
+//
+//void InitPractice3();
+//void DrawPractice3();
 
 // 정점 셰이더의 소스 코드를 가져와서 상수 C문자열에 저장
-const char* vertexShaderSource = "#version 330 core\n"
-"layout (location = 0) in vec3 aPos;\n"
-"layout (location = 1 ) in vec3 aColor;\n"
-"out vec3 ourColor;\n"
-"void main()\n"
-"{\n"
-"	gl_Position = vec4(aPos, 1.0);\n"
-"	ourColor = aColor;\n"
-"}\0";
+//const char* vertexShaderSource = "#version 330 core\n"
+//"layout (location = 0) in vec3 aPos;\n"
+//"layout (location = 1 ) in vec3 aColor;\n"
+//"out vec3 ourColor;\n"
+//"void main()\n"
+//"{\n"
+//"	gl_Position = vec4(aPos, 1.0);\n"
+//"	ourColor = aColor;\n"
+//"}\0";
+//
+//// 프래그먼트 셰이더의 소스코드를 가져와서 상수 C문자열에 저장
+//const char* fragmentShaderSource = "#version 330 core\n"
+//"out vec4 FragColor;\n"
+//"in vec3 ourColor;\n"
+//"void main()\n"
+//"{\n"
+//"	FragColor = vec4(ourColor,1.0f);\n"
+//"}\n\0";
 
-// 프래그먼트 셰이더의 소스코드를 가져와서 상수 C문자열에 저장
-const char* fragmentShaderSource = "#version 330 core\n"
-"out vec4 FragColor;\n"
-"in vec3 ourColor;\n"
-"void main()\n"
-"{\n"
-"	FragColor = vec4(ourColor,1.0f);\n"
-"}\n\0";
+// 셰이더 객체 선언
+Shader ourShader("3.3.shader.vs", "3.3.shader.fs");
 
 // 버퍼 객체 선언
 unsigned int VBO;
@@ -90,8 +102,6 @@ float square_vertices[] = {
 	-0.5f,  0.5f, 0.0f   // top left 
 };
 
-
-
 unsigned int indices[] = {
 	0,1,3,
 	1,2,3
@@ -107,7 +117,7 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
+	std::cout << "!1111\n";
 	// 윈도우 객체 생성
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
@@ -164,9 +174,8 @@ int main()
 		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);*/
 
 		InitTriangle();
-		/*DrawTriangle(); */
-		glBindVertexArray(VAO);
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		DrawTriangle(); 
+		
 		// 이벤트를 확인하고 호출한 다음 버퍼를 교체
 		glfwSwapBuffers(window);
 		glfwPollEvents();
@@ -195,49 +204,49 @@ void InitTriangle()
 	// 네 번째 인수 - 그래픽 카드가 주어진 데이터를 처리하는 방식 지정
 	glBufferData(GL_ARRAY_BUFFER, sizeof(triangle_vertices), triangle_vertices, GL_STATIC_DRAW);
 
-	// glCreateShader를 이용해 셰이더 객체 생성
-	// glCreateShader는 생성할 셰이더 유형을 인수로 전달
-	vertexShader = glCreateShader(GL_VERTEX_SHADER);
+	//// glCreateShader를 이용해 셰이더 객체 생성
+	//// glCreateShader는 생성할 셰이더 유형을 인수로 전달
+	//vertexShader = glCreateShader(GL_VERTEX_SHADER);
 
-	glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-	glCompileShader(vertexShader);
+	//glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
+	//glCompileShader(vertexShader);
 
-	glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
+	//glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
 
-	if (!success)
-	{
-		glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-	}
+	//if (!success)
+	//{
+	//	glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
+	//	std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
+	//}
 
-	fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-	glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-	glCompileShader(fragmentShader);
-	glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
-	if (!success)
-	{
-		glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-	}
+	//fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
+	//glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
+	//glCompileShader(fragmentShader);
+	//glGetShaderiv(fragmentShader, GL_COMPILE_STATUS, &success);
+	//if (!success)
+	//{
+	//	glGetShaderInfoLog(fragmentShader, 512, NULL, infoLog);
+	//	std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+	//}
 
-	shaderProgram = glCreateProgram();
+	//shaderProgram = glCreateProgram();
 
-	// 이전에 컴파일한 셰이더를 프로그램 객체에 연결한 다음
-	// glLinkProgram 함수를 사용하여 링크해야 함
-	glAttachShader(shaderProgram, vertexShader);
-	glAttachShader(shaderProgram, fragmentShader);
-	glLinkProgram(shaderProgram);
-	glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
-	if (!success)
-	{
-		glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
-		std::cout << "ERROR::SHADER::PROGRAM::LINKIN_FAILED\n" << infoLog << std::endl;
-	}
+	//// 이전에 컴파일한 셰이더를 프로그램 객체에 연결한 다음
+	//// glLinkProgram 함수를 사용하여 링크해야 함
+	//glAttachShader(shaderProgram, vertexShader);
+	//glAttachShader(shaderProgram, fragmentShader);
+	//glLinkProgram(shaderProgram);
+	//glGetProgramiv(shaderProgram, GL_LINK_STATUS, &success);
+	//if (!success)
+	//{
+	//	glGetProgramInfoLog(shaderProgram, 512, NULL, infoLog);
+	//	std::cout << "ERROR::SHADER::PROGRAM::LINKIN_FAILED\n" << infoLog << std::endl;
+	//}
 
-	// glUseProgram 이후의 모든 셰이더 및 렌더링 호출은 프로그램 객체를 사용하게 됨
-	// 셰이더 객체를 프로그램 객체에 연결했으면 삭제해야 함.
-	glDeleteShader(vertexShader);
-	glDeleteShader(fragmentShader);
+	//// glUseProgram 이후의 모든 셰이더 및 렌더링 호출은 프로그램 객체를 사용하게 됨
+	//// 셰이더 객체를 프로그램 객체에 연결했으면 삭제해야 함.
+	//glDeleteShader(vertexShader);
+	//glDeleteShader(fragmentShader);
 
 	// VAO를 바인딩하는 함수
 	glGenVertexArrays(1, &VAO);
@@ -259,11 +268,8 @@ void InitTriangle()
 
 void DrawTriangle()
 {
-	glUseProgram(shaderProgram);
+	ourShader.use();
 	glBindVertexArray(VAO);
-	// 첫 번째 인수 - OpenGL 프리미티브 타입
-	// 두 번째 인수 - 정점 배열의 시작 인덱스
-	// 마지막 인수 - 그릴 정점의 개수 지정
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 }
 
