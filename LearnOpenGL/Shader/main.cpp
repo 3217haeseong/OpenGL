@@ -41,9 +41,6 @@ void DrawTriangle();
 //"	FragColor = vec4(ourColor,1.0f);\n"
 //"}\n\0";
 
-// 셰이더 객체 선언
-Shader ourShader("3.3.shader.vs", "3.3.shader.fs");
-
 // 버퍼 객체 선언
 unsigned int VBO;
 
@@ -117,7 +114,7 @@ int main()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	std::cout << "!1111\n";
+	
 	// 윈도우 객체 생성
 	GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
 	if (window == NULL)
@@ -149,6 +146,9 @@ int main()
 	// glfwPollEvents - 키보드 입력이나 마우스 움직임 이벤트와 같은 이벤트가 발생했는지 확인, 창 상태 업데이트
 	//					해당 함수 호출
 	// glfwSwapBuffers - 컬러 버퍼 교체와 교체된 버퍼를 화면에 출력
+
+	// 셰이더 객체 선언
+	Shader ourShader = Shader("3.3.shader.vs", "3.3.shader.fs");
 	while (!glfwWindowShouldClose(window))
 	{
 		// 입력 처리
@@ -174,6 +174,7 @@ int main()
 		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);*/
 
 		InitTriangle();
+		ourShader.use();
 		DrawTriangle(); 
 		
 		// 이벤트를 확인하고 호출한 다음 버퍼를 교체
@@ -196,14 +197,13 @@ void InitTriangle()
 	// 버퍼 ID와 함께 정점 버퍼 객체 생성
 	glGenBuffers(1, &VBO);
 	// GL_ARRAY_BUFFER에 VBO 바인딩
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
+	//glBindBuffer(GL_ARRAY_BUFFER, VBO);
 	// glBufferData : 현재 바인딩된 버퍼에 사용자 정의 데이터를 복사하는데 사용되는 함수
 	// 첫 번째 인수 - 복사할 버퍼의 유형. 현재 GL_ARRAY_BUFFER에 정점 버퍼 객체가 바인딩되어 있음.
 	// 두 번째 인수 - 버퍼에 전달할 데이터의 크기(바이트)
 	// 세 번째 인수 - 실제로 전송할 데이터
 	// 네 번째 인수 - 그래픽 카드가 주어진 데이터를 처리하는 방식 지정
-	glBufferData(GL_ARRAY_BUFFER, sizeof(triangle_vertices), triangle_vertices, GL_STATIC_DRAW);
-
+	//glBufferData(GL_ARRAY_BUFFER, sizeof(triangle_vertices), triangle_vertices, GL_STATIC_DRAW);
 	//// glCreateShader를 이용해 셰이더 객체 생성
 	//// glCreateShader는 생성할 셰이더 유형을 인수로 전달
 	//vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -268,7 +268,6 @@ void InitTriangle()
 
 void DrawTriangle()
 {
-	ourShader.use();
 	glBindVertexArray(VAO);
 	glDrawArrays(GL_TRIANGLES, 0, 3);
 }
