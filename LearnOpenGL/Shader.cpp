@@ -49,8 +49,6 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 		std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
 	}
 
-	std::cout << "tournant3\n";
-	
 	fragment = glCreateShader(GL_FRAGMENT_SHADER);
 	glShaderSource(fragment, 1, &fShaderCode, NULL);
 	glCompileShader(fragment);
@@ -60,8 +58,6 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 		glGetShaderInfoLog(fragment, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
 	}
-
-	std::cout << "tournant4\n";
 
 	ID = glCreateProgram();
 	glAttachShader(ID, vertex);
@@ -73,8 +69,6 @@ Shader::Shader(const char* vertexPath, const char* fragmentPath)
 		glGetProgramInfoLog(ID, 512, NULL, infoLog);
 		std::cout << "ERROR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
 	}
-
-	std::cout << "tournant5\n";
 
 	glDeleteShader(vertex);
 	glDeleteShader(fragment);

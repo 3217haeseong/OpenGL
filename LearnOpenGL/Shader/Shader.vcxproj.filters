@@ -28,5 +28,9 @@
   <ItemGroup>
     <Text Include="3.3.shader.fs" />
     <Text Include="3.3.shader.vs" />
+    <Text Include="ShaderPractice1.vs" />
+    <Text Include="ShaderPractice2.vs" />
+    <Text Include="ShaderPractice3.vs" />
+    <Text Include="ShaderPractice3FS.fs" />
   </ItemGroup>
 </Project>

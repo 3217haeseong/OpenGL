@@ -108,6 +108,8 @@ unsigned int EBO;
 
 int main()
 {
+	float offset = 0.5;
+
 	// glfw 초기화
 	glfwInit();
 	// GLFW 설정
@@ -148,7 +150,10 @@ int main()
 	// glfwSwapBuffers - 컬러 버퍼 교체와 교체된 버퍼를 화면에 출력
 
 	// 셰이더 객체 선언
-	Shader ourShader = Shader("3.3.shader.vs", "3.3.shader.fs");
+	//Shader ourShader = Shader("3.3.shader.vs", "3.3.shader.fs");
+	//Shader PracticeShader = Shader("ShaderPractice1.vs", "3.3.shader.fs");
+	//Shader PracticeShader2 = Shader("ShaderPractice2.vs", "3.3.shader.fs");
+	Shader PracticeShader3 = Shader("ShaderPractice3.vs", "ShaderPractice3FS.fs");
 	while (!glfwWindowShouldClose(window))
 	{
 		// 입력 처리
@@ -173,8 +178,12 @@ int main()
 		glUseProgram(shaderProgram);
 		glUniform4f(vertexColorLocation, 0.0f, greenValue, 0.0f, 1.0f);*/
 
+		
+
 		InitTriangle();
-		ourShader.use();
+		/*PracticeShader2.use();
+		PracticeShader2.setFloat("HorizontalOffset", offset);*/
+		PracticeShader3.use();
 		DrawTriangle(); 
 		
 		// 이벤트를 확인하고 호출한 다음 버퍼를 교체
