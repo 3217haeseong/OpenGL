@@ -1,0 +1,36 @@
+﻿  main.cpp
+main.obj : error LNK2019: _gladLoadGLLoader_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwInit_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwTerminate_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwWindowHint_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwCreateWindow_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwWindowShouldClose_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSetWindowShouldClose"void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSetFramebufferSizeCallback_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwPollEvents_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwGetKey"void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwMakeContextCurrent_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSwapBuffers_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwGetProcAddress_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: __thiscall Shader::Shader(char const *,char const *)" (??0Shader@@QAE@PBD0@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glTexParameteri
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glTexImage2D
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glClear
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glClearColor
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glViewport
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glDrawElements
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glBindTexture
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glGenTextures
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glBindBuffer
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glDeleteBuffers
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glGenBuffers
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glBufferData
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glDeleteProgram
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glEnableVertexAttribArray
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glVertexAttribPointer
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glGenerateMipmap
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glBindVertexArray
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glDeleteVertexArrays
+main.obj : error LNK2001: 확인할 수 없는 외부 기호 _glad_glGenVertexArrays
+C:\OpenGL\glfw-3.5.1\build\src\Debug\glfw3.lib : warning LNK4272: 'x64' 라이브러리 컴퓨터 종류가 'x86' 대상 컴퓨터 종류와 충돌합니다.
+C:\OpenGL\LearnOpenGL\Texture\Debug\Texture.exe : fatal error LNK1120: 33개의 확인할 수 없는 외부 참조입니다.

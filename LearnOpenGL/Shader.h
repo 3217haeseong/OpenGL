@@ -12,10 +12,10 @@
 
 class Shader
 {
+public:
 	// 프로그램 ID
 	unsigned int ID;
 
-public:
 	// 셰이더를 읽고 생성하는 생성자
 	Shader(const char* vertexPath, const char* fragmentPath);
 
