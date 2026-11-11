@@ -36,5 +36,8 @@
   <ItemGroup>
     <Text Include="Texture.vs" />
     <Text Include="Texture.fs" />
+    <Text Include="TexturePractice1.fs" />
+    <Text Include="temp.txt" />
+    <Text Include="TexturePractice4.fs" />
   </ItemGroup>
 </Project>

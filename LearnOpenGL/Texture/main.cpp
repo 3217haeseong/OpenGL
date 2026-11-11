@@ -41,6 +41,14 @@ float vertices[] = {
 	-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
 	-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 1.0f  // top left 
 };
+
+//float vertices[] = {
+//	// positions          // colors           // texture coords (note that we changed them to 2.0f!)
+//	 0.5f,  0.5f, 0.0f,   1.0f, 0.0f, 0.0f,   2.0f, 2.0f, // top right
+//	 0.5f, -0.5f, 0.0f,   0.0f, 1.0f, 0.0f,   2.0f, 0.0f, // bottom right
+//	-0.5f, -0.5f, 0.0f,   0.0f, 0.0f, 1.0f,   0.0f, 0.0f, // bottom left
+//	-0.5f,  0.5f, 0.0f,   1.0f, 1.0f, 0.0f,   0.0f, 2.0f  // top left 
+//};
 unsigned int indices[] = {
 	0, 1, 3, // first triangle
 	1, 2, 3  // second triangle
@@ -59,6 +67,8 @@ unsigned char* data2;
 unsigned int texture1, texture2;
 
 int width, height, nrChannels;
+
+float ratio = 0.5f;
 
 int main()
 {
@@ -133,12 +143,17 @@ int main()
 	/*glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
 	glGenerateMipmap(GL_TEXTURE_2D);*/
 
-	Shader TextureShader = Shader("Texture.vs", "Texture.fs");
+	//Shader TextureShader = Shader("Texture.vs", "Texture.fs");
+	//Shader Practice1Shader = Shader("Texture.vs", "TexturePractice1.fs");
+	Shader Practice4Shader = Shader("Texture.vs", "TexturePractice4.fs");
 	InitTexture();
-	TextureShader.use();
-	glUniform1i(glGetUniformLocation(TextureShader.ID, "texture1"), 0);
-	TextureShader.setInt("texture2", 1);
-	
+	Practice4Shader.use();
+	//Practice1Shader.use();
+	/*glUniform1i(glGetUniformLocation(TextureShader.ID, "texture1"), 0);
+	TextureShader.setInt("texture2", 1);*/
+	//Practice4Shader.setFloat("ratio", ratio);
+	Practice4Shader.setInt("texture1", 0);
+	Practice4Shader.setInt("texture2", 1);
 	while (!glfwWindowShouldClose(window))
 	{
 		// 입력 처리
@@ -152,9 +167,12 @@ int main()
 		glBindTexture(GL_TEXTURE_2D, texture1);
 		glActiveTexture(GL_TEXTURE1);
 		glBindTexture(GL_TEXTURE_2D, texture2);
+		
+		Practice4Shader.use();
+		glBindVertexArray(VAO);
+		Practice4Shader.setFloat("ratio", ratio);
 
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-
 
 		// 이벤트를 확인하고 호출한 다음 버퍼를 교체
 		glfwSwapBuffers(window);
@@ -163,6 +181,7 @@ int main()
 
 	glDeleteVertexArrays(1, &VAO);
 	glDeleteBuffers(1, &VBO);
+	glDeleteBuffers(1, &EBO);
 	glDeleteProgram(shaderProgram);
 
 	// GLFW에 할당된 모든 리소스를 정리/삭제
@@ -181,6 +200,26 @@ void processInput(GLFWwindow* window)
 	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
 	{
 		glfwSetWindowShouldClose(window, true);
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+	{
+		ratio = ratio + 0.001f;
+		if (ratio >= 1.0f)
+		{
+			ratio = 1.0f;
+		}
+		std::cout << "UP_KEY " <<ratio << std::endl;
+	}
+
+	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+	{
+		ratio = ratio - 0.001f;
+		if (ratio <= 0.0f)
+		{
+			ratio = 0.0f;
+		}
+		std::cout << "DOWN_KEY " <<ratio << std::endl;
 	}
 }
 
@@ -217,7 +256,7 @@ void InitTexture()
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 
-	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
 	stbi_set_flip_vertically_on_load(true);
@@ -253,9 +292,6 @@ void InitTexture()
 		std::cout << "Failed to load texture" << std::endl;
 	}
 	stbi_image_free(data);
-
-
-
 }
 
 void DrawTexture()
