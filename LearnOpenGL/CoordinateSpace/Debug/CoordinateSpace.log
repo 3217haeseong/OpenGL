@@ -1,0 +1,18 @@
+﻿  main.cpp
+main.obj : error LNK2019: _glfwInit_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwTerminate_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwWindowHint_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwCreateWindow_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwWindowShouldClose_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSetWindowShouldClose"void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSetFramebufferSizeCallback_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwPollEvents_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwGetKey"void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwMakeContextCurrent_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwSwapBuffers_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: _glfwGetProcAddress_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: __thiscall Shader::Shader(char const *,char const *)" (??0Shader@@QAE@PBD0@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall Shader::use(void)" (?use@Shader@@QAEXXZ)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+main.obj : error LNK2019: "public: void __thiscall Shader::setInt(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,int)const " (?setInt@Shader@@QBEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@Z)_main 함수에서 참조되는 확인할 수 없는 외부 기호
+C:\OpenGL\glfw-3.5.1\build\src\Debug\glfw3.lib : warning LNK4272: 'x64' 라이브러리 컴퓨터 종류가 'x86' 대상 컴퓨터 종류와 충돌합니다.
+C:\OpenGL\LearnOpenGL\CoordinateSpace\Debug\CoordinateSpace.exe : fatal error LNK1120: 15개의 확인할 수 없는 외부 참조입니다.
