@@ -125,8 +125,11 @@ int main()
 
 		TransformationShader.use();
 		glm::mat4 trans = glm::mat4(1.0f);
+		/*trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
+		trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f,0.0f,1.0f));*/
+
+		trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f, 0.0f, 1.0f));
 		trans = glm::translate(trans, glm::vec3(0.5f, -0.5f, 0.0f));
-		trans = glm::rotate(trans, (float)glfwGetTime(), glm::vec3(0.0f,0.0f,1.0f));
 
 		// 유니폼 변수를 찾아냄
 		unsigned int transformLoc = glGetUniformLocation(TransformationShader.ID, "transform");
@@ -137,6 +140,14 @@ int main()
 		// 마지막 인수 - 실제 행렬 데이터. GLM은 행렬 데이터를 저장하는 방식이 OpenGL의 예상 방식과 항상 일치하지는 않으므로
 		//				GLM의 내장함수인 value_ptr을 사용하여 먼저 데이터를 변환
 		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(trans));
+
+		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		
+		trans = glm::mat4(1.0f);
+		trans = glm::translate(trans, glm::vec3(-0.5f, 0.5f, 0.0f));
+		float scaleAmount = static_cast<float>(sin(glfwGetTime()));
+		trans = glm::scale(trans, glm::vec3(scaleAmount, scaleAmount, scaleAmount));
+		glUniformMatrix4fv(transformLoc, 1, GL_FALSE, &trans[0][0]);
 
 		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
 
