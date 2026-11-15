@@ -1,0 +1,10 @@
+﻿  main.cpp
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(222,22): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(242,27): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(300,11): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(301,11): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(305,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(306,16): warning C4244: '초기화 중': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(307,10): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\OpenGL\LearnOpenGL\Camera\main.cpp(308,10): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Camera.vcxproj -> C:\OpenGL\LearnOpenGL\Camera\x64\Debug\Camera.exe
