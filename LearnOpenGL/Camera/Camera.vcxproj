@@ -157,6 +157,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Shader.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="FPSCamera.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="CameraFragmentShader.fs" />
